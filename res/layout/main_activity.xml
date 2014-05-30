@@ -34,35 +34,35 @@
                 android:textSize="14sp"
                 android:textStyle="italic" />
 
-            <br.com.santhyago.demo.circletoformanimation.component.TextViewEx
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:text="@string/paragraphy_01"
                 android:textSize="12sp" />
 
-            <br.com.santhyago.demo.circletoformanimation.component.TextViewEx
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:text="@string/paragraphy_02"
                 android:textSize="12sp" />
 
-            <br.com.santhyago.demo.circletoformanimation.component.TextViewEx
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:text="@string/paragraphy_03"
                 android:textSize="12sp" />
 
-            <br.com.santhyago.demo.circletoformanimation.component.TextViewEx
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:text="@string/paragraphy_04"
                 android:textSize="12sp" />
 
-            <br.com.santhyago.demo.circletoformanimation.component.TextViewEx
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
