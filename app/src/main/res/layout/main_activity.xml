@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/fake_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fake_action_bar"/>
+
+    <ImageView
+        android:id="@+id/casa_do_jose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/casa_do_jose"
+        android:layout_below="@id/fake_action_bar"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/nao_ha_registros"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fake_nao_ha_registros"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/fake_action_bar"/>
+
+    <View
+        android:id="@+id/background_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="#000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="35dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <br.com.santhyago.demo.circletoformanimation.component.FloatLabelLayout
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+			android:alpha="0"
+            app:floatLabelTextAppearance="@style/TextAppearance.CircleToForm.FloatLabel" >
+
+            <EditText
+                android:id="@+id/address_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address_by_postal_code"
+                android:imeOptions="actionDone"
+                android:textColor="#0099cc"
+                android:textColorHint="#05b3ed"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true" />
+        </br.com.santhyago.demo.circletoformanimation.component.FloatLabelLayout>
+
+        <br.com.santhyago.demo.circletoformanimation.component.FloatLabelLayout
+            android:id="@+id/postal_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+			android:alpha="0"
+            app:floatLabelTextAppearance="@style/TextAppearance.CircleToForm.FloatLabel" >
+
+            <EditText
+                android:id="@+id/postal_code_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/postal_code_by_address"
+                android:imeOptions="actionDone"
+                android:textColorHint="#05b3ed"
+                android:textColor="#0099cc"
+                android:inputType="number"
+                android:singleLine="true" />
+        </br.com.santhyago.demo.circletoformanimation.component.FloatLabelLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/plus_sign"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_menu_add" />
+
+    <ImageView
+        android:id="@+id/search_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_menu_search"
+        android:viewName="search_button"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_results_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    tools:context="br.com.santhyago.demo.circletoformanimation.activity.SearchResults">
+
+    <ImageView
+        android:id="@+id/circle_background"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/circle"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/search_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_menu_search"
+        android:viewName="search_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="5dp"
+        android:text="Procurando por"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@+id/search_button"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/search_button" />
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toEndOf="@+id/search_button"
+        android:layout_alignBottom="@+id/search_button" />
+
+</RelativeLayout>
