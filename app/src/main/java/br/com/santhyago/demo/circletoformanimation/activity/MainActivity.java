@@ -333,7 +333,6 @@ public class MainActivity extends Activity {
 
                         if (Math.abs(searchBoxParams.width - searchBoxW) <= 2) {
                             searchBoxParams.height = (int) ((2 * (searchBoxParams.height - searchBoxH)) / 3 + searchBoxH);
-                            searchBoxParams.height = (int) ((searchBoxParams.height - searchBoxH) * 2 / 3 + searchBoxH);
                             mWindowManager.updateViewLayout(searchBox, searchBoxParams);
 
                             if (Math.abs(searchBoxParams.height - searchBoxH) <= 2) {
